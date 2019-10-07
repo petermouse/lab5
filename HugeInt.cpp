@@ -34,7 +34,6 @@ HugeInt::HugeInt(short int signToCopy,vector<short int> dataToCopy):sign(signToC
         sign=0;
 }
 
-
 vector<short int>HugeInt::getData() const
 {
     return data;
@@ -180,8 +179,6 @@ HugeInt HugeInt::operator-(const HugeInt & right)const
         HugeInt negativeRight(1,right.getData());
 	return (*this)+negativeRight;
     }
-
-
 }
 ostream & operator<<(ostream &output,const HugeInt & h)
 {
